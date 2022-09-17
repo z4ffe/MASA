@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+p {
+  background-color: #00ff77;
+  height: 300px;
+  width: 800px;
+  margin: auto auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

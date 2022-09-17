@@ -1,0 +1,15 @@
+1. Take the "clock" files. 
+    Make the three clock hands to rotate in accordance to the current
+    hours, minutes, seconds.
+    Make them tick.
+
+    Hints:
+    a. Each time you check time - change "transform: rotate(...deg)" property 
+    of the hands
+
+    b. Make transform-origin to be 100%, so the hands will rotate not
+    around the middle, but around the right end 
+
+    c. Add audio element to the html and run audio.play() each time 
+    before you move the clock hands
+

@@ -1,0 +1,42 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+.para {
+  font-family: "Times New Roman", serif;
+}
+
+.para {
+  background-color: #0ff0f0;
+  color: rgba(239, 4, 4, 0.75);
+}
+
+.para2 {
+  background-color: rgb(155, 155, 5);
+  color: rgb(55, 15, 5);
+}
+
+.para3 {
+  background-color: rgba(155, 255, 5, 0.5);
+  color: rgb(55, 115, 5);
+}
+
+ul {
+  background-color: #0ff0f0;
+  border: 1px solid black;
+}
+
+.inline {
+  background-color: #0ff0f0;
+  border: 1px solid black;
+}
+
+#montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+#roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

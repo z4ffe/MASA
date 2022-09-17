@@ -1,0 +1,39 @@
+    body {
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid gray;
+}
+
+img {
+    width: 200px;
+}
+
+nav {
+    background: palevioletred;
+}
+
+nav ul {
+    list-style: none;
+    min-height: 80px;
+}
+
+nav li {
+    padding: 5px;
+    border: 1px solid purple;
+    font-size: 16px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.line1 {
+  margin-top: 15px;
+  background-color: #0038b8;
+  height: 150px;
+  width: 100%;
+}
+
+.main {
+  margin: 20px auto 0;
+  font-size: 400px;
+  color: #0038b8;
+}
+
+.line2 {
+  margin-top: 0;
+  background-color: #0038b8;
+  height: 150px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

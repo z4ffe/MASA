@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 600px;
+}
+table tr {
+  height: 30px;
+}
+table tr:nth-child(1) {
+  opacity: 0.2;
+}
+table tr:nth-child(2) {
+  opacity: 0.4;
+}
+table tr:nth-child(3) {
+  opacity: 0.6;
+}
+table tr:nth-child(4) {
+  opacity: 0.8;
+}
+table td:nth-child(1) {
+  background-color: red;
+}
+table td:nth-child(2) {
+  background-color: purple;
+}
+table td:nth-child(3) {
+  background-color: darkslategrey;
+}
+table td:nth-child(4) {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

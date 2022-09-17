@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto;
+  width: 85%;
+}
+.main button {
+  border: none;
+  background-color: darkslategray;
+  color: skyblue;
+  font-weight: 600;
+  margin-right: 10px;
+  width: 200px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

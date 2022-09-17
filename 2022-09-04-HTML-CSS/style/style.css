@@ -1,0 +1,48 @@
+* {
+  background-color: antiquewhite;
+  font-family: Gilroy, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  min-height: 400px;
+  margin: auto auto;
+}
+.header .title {
+  text-transform: uppercase;
+  text-align: center;
+  color: cadetblue;
+  margin-top: 10px;
+}
+.header .paragraph {
+  font-size: 1.5em;
+  text-align: center;
+  color: brown;
+  border-bottom: 1px solid maroon;
+  padding: 20px;
+  transition: 0.5s;
+}
+.header .paragraph:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.header img {
+  width: 20px;
+  margin: 0 auto;
+  transition: 0.2s;
+  padding-left: 10px;
+}
+.header img:active {
+  transition: 0.2s;
+  transform: scale(110%);
+}
+
+/*# sourceMappingURL=style.css.map */

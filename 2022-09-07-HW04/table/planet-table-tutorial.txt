@@ -1,0 +1,298 @@
+1. Read notes-tables.txt, it is the general explanation of the tags 
+   
+2. We're going to copy the next table: planet-table.jpeg
+
+3. Create planet-table.html and create by "!" the usual HTML template:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+4. Change title to "Planet Table" and create ./css/planet-table.css 
+   and connect it to planet-table.html 
+   
+5. Create the general structure of the table (we omit <tfoot):
+
+    <table>
+        <thead>
+
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+6. Now put one row into <thead>:
+   
+   <thead>:
+
+            <tr>
+                <td></td>
+                <td>Name</td>
+                <td>Mass<br>(10<span class="super">24</span>kg)</td>
+                <td>Diameter<br>(km)</td>
+                <td>Dencity<br>(kg/m<sup class="smaller">3</sup>)</td>
+                <td>Gravity</td>
+                <td>Length<br>of day</td>
+                <td>Distance<br>from sun</td>
+                <td>Mean<br>temperature</td>
+            </tr>
+
+7. Pay attention 
+   
+     a) the first <td> is emtpy
+        
+     b) there are 2 ways to create "superscript" text:
+          one - is to use HTML tag <sup> 
+          second - by CSS 
+        
+     c) to use the second way we created the class "super",
+        now we added to the CSS file:
+
+        .super {
+            vertical-align: super;
+            font-size: 75%;
+        }
+
+     d) the text in <sup> a little bit big, so we created 
+        the class "smaller", and added to the CSS file:
+
+        .smaller {
+            font-size: 75%;
+        }
+
+8. MISSION: a) add two more <td> - "Number of moons" and "Notes"
+            b) add units (like in the picture) to the <td> of "Gravity"
+               - with <sup> tag 
+            c) add units (like in the picture) to the <td> 
+               of "Length of day"
+            d) add units (like in the picture) to the <td>
+               "Distance from Sun" - with .super class (using CSS)
+            e) add units (like in the picture) to the <td>
+               "Mean temperature" - use the code of HTML entity 
+               named "degree"
+
+9. Insert the next 4 rows into <tbody>:
+
+            <tr>
+                <td>Terrestrial</td>
+                <td>Mercury</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td>Closest to the Sun</td>
+            </tr>
+            <tr>
+                <td>Terrestrial</td>
+                <td>Venus</td>
+                <td>4.87</td>
+                <td>12,104</td>
+                <td>5243</td>
+                <td>8.9</td>
+                <td>2802.0</td>
+                <td>108.2</td>
+                <td>464</td>
+                <td>0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Terrestrial</td>
+                <td>Earth</td>
+                <td>5.97</td>
+                <td>12,756</td>
+                <td>5514</td>
+                <td>9.8</td>
+                <td>24.0</td>
+                <td>149.6</td>
+                <td>15</td>
+                <td>1</td>
+                <td>Our world</td>
+            </tr>
+            <tr>
+                <td>Terrestrial</td>
+                <td>Mars</td>
+                <td>0.642</td>
+                <td>6,792</td>
+                <td>3933</td>
+                <td>3.7</td>
+                <td>24.7</td>
+                <td>227.9</td>
+                <td>-65</td>
+                <td>2</td>
+                <td>The red planet</td>
+            </tr>
+
+10. Now the borders.
+    Try at the CSS file:
+
+    table {
+        border: 1px solid black;
+    }
+
+    Exchange it by:
+
+    table, td {
+        border: 1px solid black;
+    }
+
+    Nice, right? But how we make one border?
+
+    Add also (this merges all the duplicate borders into one):
+
+    table {
+        border-collapse: collapse;
+    }
+
+11. Now we want to make the headers distinctive. So, inside <thead> 
+    exchange all the <td> by <th> ("table header").
+
+    Pay attention that now it is BOLD and CENTERED. 
+
+    BUT WHERE ARE THE BORDERS?
+
+    So we should add "th" to the list:
+
+    table, td, th {
+        border: 1px solid black;
+    }
+
+12. MISSION: make padding of 7px inside all the cells.
+
+13. CHECK 1. Check the files. Compare what you have now
+    to the files planet-table-check1.css and planet-table-check1.html 
+
+14. Now we want to make the left cell "Terrestrial" not
+    repeat itself 4 times but span over 4 rows. 
+
+    So we delete it (<td>Terrestrial</td>) from the rows of 
+    "Venus","Earch" and "Mars".
+
+    Now the order of the columns has been broken.
+
+    But at the row of "Mercury" we use rowspan:
+
+        <td rowspan="4">Terrestrial</td>
+
+    and it fixes everything.
+
+15. We add one more row:
+
+            <tr>
+                <td rowspan=4>Jovian<br>planets</td>
+                <td rowspan=2>Gas<br>giants</td>
+                <td>Jupiter</td>
+                <td>1898</td>
+                <td>142,984</td>
+                <td>1326</td>
+                <td>23.1</td>
+                <td>9.9</td>
+                <td>778.6</td>
+                <td>-110</td>
+                <td>67</td>
+                <td>The largest planet</td>
+            </tr>
+
+    Pay attention for the "rowspan"s at the first 2 cells.
+    We prepare "Jovian planets" to span over 4 rows 
+    and "Gas giants" to span over 2 rows.
+
+    But again the order of the columns has been broken.
+
+    It is because "Terrestrial" should span over 2 columns:
+    "Jovian planets" and "Gas giants".
+
+    So we fix it with "colspan":
+
+    <td rowspan="4" colspan="2">Terrestrial</td>
+
+    But the headers are still not OK, so we fix them by adding 
+    "collspan" to the first empty <th>:
+
+    <th colspan="2"></th>
+
+16. Add 4 more rows:
+
+            <tr>
+                <td>Saturn</td>
+                <td>568</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+                <td>10.7</td>
+                <td>1433.5</td>
+                <td>-140</td>
+                <td>62</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ice<br>Giants</td>
+                <td>Uranus</td>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Neptune</td>
+                <td>102</td>
+                <td>49,528</td>
+                <td>16.38</td>
+                <td>11.0</td>
+                <td>16.1</td>
+                <td>4495.1</td>
+                <td>-200</td>
+                <td>14</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Dwarf planets</td>
+                <td>Pluto</td>
+                <td>0.0146</td>
+                <td>2,370</td>
+                <td>2095</td>
+                <td>0.7</td>
+                <td>153.3</td>
+                <td>5906.4</td>
+                <td>-225</td>
+                <td>5</td>
+                <td>Declassified as a planet in 2006</td>
+            </tr>
+
+17. MISSION: 
+    a) fix the span of "Ice giants"
+
+    b) fix the span of "Dwarf planets"
+
+    c) make "Terrestrial planets", "Jovian planets", "Dwarf planets", 
+       "Gas giants", "Ice giants" and all the planet names 
+       BOLD and CENTERED
+
+    d) right after the tag <table> add the tag <caption> with 
+       the text: "Data about the planets of our solar system".
+       Make it's font bigger by 25% and make the space of 5px 
+       between the caption and the table
+
+18. CHECK 2. Check the files. Compare what you have now
+    to the files planet-table-check2.css and planet-table-check2.html 
+
+
+

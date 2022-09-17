@@ -1,0 +1,48 @@
+DO NOT FORGET TO CONVERT STRING from prompt()
+TO NUMBER if needed
+
+
+1. /* There are 2 variables with the values: name of the person 
+         and their birth year. 
+      Use two more variables, to get the current date and 
+             to calculate the age. 
+      If the age is not dividible by 10, congratulate 
+           the person at the console
+      (or by document.write(str)), like in the example: 
+             "Yosi, congratulations, you're 16!" 
+      If the age is ended by 0, congratulate the person 
+          at the console
+      (or by document.write(string)) like this: 
+      "Yosy, congratulations with your 40th anniversary!". 
+      If this person is also older than 60, show at the console
+      (or by document.write(string)) too: "Оооо, you're like Methuselach!" */
+
+2. /* Ask user to enter 3 different numbers. 
+      When the user enters the 2nd number, check 
+      if it is not equal to the first.
+      If it is equal, use function alert() to tell the user that
+      it was wrong input. For example, 
+      alert('The first and the second numbers are equal. \nWrong input!')
+      Show at the console the maximal number of the 3.  */
+
+3. Like we did for logic operators, 
+   fill the next table for binary addition.
+
+   Is it more like "&&" or like "||"?
+
+//   +   |   0   |   1 
+//----------------------
+//   0   |       |          
+//   1   |       |      
+
+4. Leap year. You program gets a year. It should use % and 
+   answer if the given year is a leap year. If a year 
+   is not divisible by 4 then it is not leap,
+   if it is divisible by 4 but not by 100 - it is leap,
+   if it is divisible by 400 - it is leap (like 2000 was),
+   if it is divisible by 100 but not by 400 - it is not leap
+   (like 1900 was).
+
+5. Aquarelle. Create several columns from rectangles of the same
+color but with the different transparency - use <table>. Possible
+output you see at Aquarelle.JPG. Colors - your choice

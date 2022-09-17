@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #747e79, #899494, #a2aaad, #bdc0c5, #d8d7db);
+  background-repeat: repeat;
+  height: 200vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.diff-color {
+  color: darkred;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .title1 {
+  margin: 10px;
+  padding: 5px;
+}
+main .title2 {
+  width: 170px;
+  margin: 24px;
+  padding: 15px;
+  border-top: 2px solid #4f4f4f;
+  border-left: 2px solid #737373;
+  box-shadow: 16px 10px 5px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 16px 10px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 16px 10px 5px 0 rgba(0, 0, 0, 0.75);
+}
+main .title3 {
+  margin: 7px;
+  padding: 13px;
+}
+main .text1 {
+  margin: 5px;
+  padding: 15px;
+}
+main .text2 {
+  margin: 10px;
+  padding: 25px;
+}
+main .text3 {
+  margin: 10px;
+  padding: 15px;
+}
+main .text4 {
+  margin: 25px;
+  padding: 26px;
+}
+main .idem {
+  color: silver;
+  background-color: #6b2a2a;
+}
+main .link {
+  border-top: 1px solid #7a7a7a;
+  border-bottom: 1px solid #7a7a7a;
+  font-weight: 600;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  font-weight: 500;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.cover img {
+  width: 200px;
+  margin: 0 auto;
+}
+.cover__paragraph {
+  margin: 9px auto 0;
+  font-style: inherit;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.footer h4 {
+  margin: 10px auto 0;
+  font-size: 20px;
+}
+.footer__lists {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 300px 10px;
+}
+.footer__lists .lists__container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__lists .lists__container p {
+  font-size: 17px;
+  font-weight: bold;
+}
+.footer__lists .lists__container ul {
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+  list-style-image: url("../img/lp-list-icon.png");
+  vertical-align: center;
+}
+.footer__lists .lists__container ul li {
+  padding-top: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+1. Birthdays. Get day, month and year of birth for two persons.
+   (No need to make all the prompts, 
+    you can just set them like this:
+
+    var year1=1999, year2=1998, month1="May", month2="May", 
+        day1=22, day2=22)
+
+   If they were born on the same day, the program says: 
+   You both were born on the same day exactly!
+   If they were born on the same day but in different years, 
+   the program says: you've got the same birth date!
+
+2. a) Prompt the user for 3 numbers. 
+      It's given that no two numbers are equal.   
+      Show at the console the numbers from the smallest to the biggest, 
+      like 6 < 8 < 122. 
+
+      or
+
+   b) CHALLENGE
+      Some of the numbers may be equal. Show, if needed the equality, like:
+      6 = 6 < 122
+
+3. It was unusual for us to add together binary numbers.
+But if we would need to add together larger binary numbers like 
+111011 and 101010, HOW would you perform it?
+
+4. Get an integer number by prompt(). Perform validation 
+  (make sure that the input is valid - not empty, number, 
+  integer - by Number.isInteger().
+  Example of usage:
+        if (Number.isInteger(num) === true) 
+               console.log('this is integer'))
+
+   Use ternary operator and tell if the number is even or odd.
+
+5. The program gets 3 numbers. Use ternary operator to decide
+   (without multiplying them!!!) if their product (произведение) 
+   will be positive or negative
+
+ 
+6. Like Wiki. Create 2 short "like wiki" 
+   pages. Don't work on it too much, as
+   it is an exercise, but funny is
+   appreciated.
+a) Remove default margins and padding from the elements.
+b) Use float to surround a table and a picture with a text.
+c) Create underlined section names.
+d) Create "Table of contents" and create at least 1 link 
+   to some inner section and 1 link 
+   to some section of the second page.
+
+
+
+

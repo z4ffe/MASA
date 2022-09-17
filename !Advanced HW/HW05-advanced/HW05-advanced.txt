@@ -1,0 +1,33 @@
+Fortune Wheel: MISSION 2
+
+6. Make the text change it's direction while the wheel is spinning
+   and stop in the right direction
+
+7. Take "responses" array, shuffle it with the "shuffle" function.
+
+Example of shuffle() function ()
+
+function shuffle (array) {
+
+	let currentIndex = array.length;
+	let temporaryValue, randomIndex;
+
+	// While there remain elements to shuffle...
+	while (0 !== currentIndex) {
+		// Pick a remaining element...
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+
+		// And swap it with the current element.
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
+
+	return array;
+
+}
+   
+8. On start and when "Renew the Wheel" is clicked - 
+   create the number of sectors as the number 
+   of statements in "responses" array

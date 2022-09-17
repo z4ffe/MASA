@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000077;
+  background-color: #007;
+  /* When each pair has the same symbols, we can short cut the code from 6 symbols to 3 */
+  color: #ffaa66;
+  color: #fa8;
+  height: 100vh;
+  width: 95vw;
+}
+
+.wrapper {
+  display: flex;;
+  flex-direction: column;
+  justify-content: center;
+  background-color: yellow;
+  margin-top: 15px;
+  width: 600px;
+  opacity: .5;
+
+  img {
+    margin: 0 auto;
+    padding: 5px;
+    width: 150px;
+  }
+}
+
+.wrapper > p {
+  height: 20px;
+  background-color: #000077;
+  margin: 0 auto;
+}
+
+

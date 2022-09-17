@@ -1,0 +1,52 @@
+HTML Tables
+------------------
+When to use
+1. For layout of data
+2. Not for layout of the whole screen
+   - because there is no semantic meaning 
+     for the <table> tag
+   - <table> tags not make the data accessible
+   - there are more convenient or modern layout tools 
+     like float, position, flex, grid
+
+Olympics data for example
+
+HTML table consists of the main parts:
+-----------------------------------------
+
+table
+   thead
+   tbody
+   tfoot
+
+html table
+-----------------
+<table> - we use it for the content, not for the layout
+<thead> - important for the search engins and readers
+<tbody> - the contents
+<tfoot> - usually contains statistics, like summaries, averages, etc.
+          You do not see <tfoot> often (usually it is omitted) 
+
+          <thead>, <tbody> and <tfoot> are comprised of the table rows <tr>,
+          and the table rows are comprised of <td> or <th>
+
+<tr> - table row
+<td> - table data
+<th> - table header
+
+    HTML table "has no columns", it has rows <tr> and inside each <tr> 
+    it has <td> (table data) cells or <th> (table header - their data 
+    is bold and centered) cells.
+    We may say that <th> and <td> which are placed one above another 
+    comprise a column.
+
+Table borders 
+----------------------------------------------------------------
+Border of each table element is only it's border. 
+For example if we create border for <table>, it's only 
+the external table border, no table part gets it's border from it.
+If we create border for <tr>, each table row will get this border,
+but no <td> or <th> will have it.
+
+border-collapse - property that enables merging of the borders 
+                  of the different parts of the table

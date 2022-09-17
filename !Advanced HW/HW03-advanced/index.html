@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Color The Parrot</title>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="body-clr parrot">
+            <div class="tail-wing tail1"></div>
+            <div class="tail-wing tail2"></div>
+            <div class="body-clr wing">
+                <div class="wing-color1"></div>
+                <div class="wing-color2">
+                    <div class="wing-color2-inner"></div>
+                </div>
+            </div>
+            <div class="eye-patch">
+                <div class="eye"></div>
+            </div>
+            <div class="beak-upper">
+                <div class="beak-lower"></div>
+            </div>
+            <div class="feather"></div>
+            <div class="leg"></div>
+            <div class="branch"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="body-btn" data-class="body-clr">Body</button>
+        <button id="main-wing-btn" data-class="wing">Wing</button>
+        <button id="sub-wing-btn" data-class="wing-color1">Wing Highlight</button>
+        <button id="upper-beak-btn" data-class="beak-upper">Upper Beak</button>
+        <button id="lower-beak-btn" data-class="beak-lower">Lower Beak</button>
+        <button id="claw-btn" data-class="leg">Claw</button>
+        <button id="tail-wing-btn" data-class="tail-wing">Tail Wing</button>
+        <button id="head-wing-btn" data-class="feather">Head Wing</button>
+        <button id="eye-patch-btn" data-class="eye-patch">Eye Patch</button>
+        <button id="eye-btn" data-class="eye">Eye</button>
+        <div class="color-picker">
+            <label for="color">Choose color</label>
+            <input type="color" id="color">
+        </div>
+        <div class="mode">
+            <div class="div">
+                <input type="radio" id="loop" value="0" name="mode" checked>
+                <label for="loop">Loop</label>
+            </div>
+            <div>
+                <input type="radio" id="random" value="1" name="mode">
+                <label for="random">Random</label>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>

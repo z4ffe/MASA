@@ -1,0 +1,63 @@
+1. Ternary operator practice.
+   a) var adminPassword = 'Rxjel$#1hs';
+      var admin1 = "Yosi", admin2 = "Noa", admin3 = "Yael"
+
+      Ask the user their username and
+      ask to enter a password.
+
+      If the username is equal to one of the admin's names 
+      and if the password is equal to adminPassword, 
+      show message "You're redirected to the admin area"
+
+      If it is wrong, alert "Access denied"
+
+   b) Ask the user to enter a word in upper case.
+      Say if it is OK, or not in upper case.
+
+      Hint to how to make this check see below all the exercises. 
+
+2. 11111101 + 101001 ? (in binary system)
+
+3. Show opening hours of museum.
+
+   Get current Date by "new Date()".
+   Use function currentDate.getDay().
+   If it returns 1, it's Monday, the museum is closed.
+   If it returns 0 or 4 - it's Sunday or Wednesday, 
+   it's open half day from 8:00 till 12:00,
+   In the other days it should be open from 8:00 till 20:00.    
+
+   Use switch.
+
+4. Our application should get a month and output it’s season 
+   in accordance with this specification:
+
+      Winter: December, January and February
+      Spring: March, April and May
+      Summer: June, July and August
+      Autumn: September, October and November
+
+   Use switch.
+
+5. Get person's height and weight.
+   Use switch(true).
+   
+   Respond to the person's combination of height 
+   and weight (define your ranges), for example:
+
+   If the person is taller than 180 and weights less than 90,
+   say "You're tall, you should eat more".
+   If the height is between 160 and 170 and the weight is less
+   than 80, say "You're height is great, why you're
+   speaking about your weight?", etc.
+
+6. Like Wiki - continued from HW06.
+
+e) Insert a picture inside some div and make it a link to somewhere.
+f) Insert a picture inside some table and make it a link to nowhere.
+g) Use px, cm, mm, inches and % for some sizes
+h) Apply some identical properties to some list of classes
+i) Put the files of your Wiki into mango/your-name/wiki directory
+
+Hint for 1 b): if word is equal to word in Upper Case, then the
+               original word is given in Upper Case

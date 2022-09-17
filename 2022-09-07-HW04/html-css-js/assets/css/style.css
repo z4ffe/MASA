@@ -1,0 +1,23 @@
+.para {
+  color: #0f7;
+}
+
+.middle {
+  background-color: yellow;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+}
+
+.div1 {
+  background-color: rgba(47, 79, 79, 0.5);
+}
+
+.div2 {
+  background-color: rgb(47, 79, 79);
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=planet-table.css.map */

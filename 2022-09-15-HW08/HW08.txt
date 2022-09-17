@@ -1,0 +1,104 @@
+0. Create at the hosting dir mango/your-name/HW08 and put there the homework
+
+1. Ternary operator inside ternary operator.
+
+   a) Ask user to enter a number. Your output should be: "x < 70" 
+      or "x > 210" or "x is between 70 and 210".
+
+      CHALLENGE: With more ternary operators inside. Check if 
+                 there is any input. Check if the input is numeric.
+   
+   b) Ask the user to enter his name (one variable) 
+      and family name (another variable) and say 
+      that you're happy to see him if his name is John Smith, 
+      Jane Smith or Jack Daniels, otherwise tell him "go away".
+
+      Check that the user enters not empty string and not null 
+      (when clicking on "Cancel")
+
+2. a) Write function avg(a, b, c) that gets 3 numeric parameters (arguments)
+      and prints their average
+
+   b) Write function avg2(a, b, c) that gets no parameters (arguments),
+      asks user for three numbers, and prints their average
+
+   c) Run the both functions couple of times, like:
+
+      var x = 15, y = 20, z = 33;
+
+      avg(x, y, z);
+      avg(30, 40, 50);
+
+      avg2();
+      avg2();
+
+3. Datatypes. Use typeof operator. You're going to check 
+   datatypes and to use new functions parseInt() and parseFloat(). 
+
+      -- Show which data type is empty string ('')
+      -- Create new variable, but don't assign it a value.
+         Show which data taype this variable is. 
+      -- Show datatype of true and datatype of false 
+         (they are not strings and shoud not be in quotes)
+      -- Use function confirm() like this: 
+         var answer = confirm('Are you agree?')
+         Check which value is assigned to answer variable
+         when you click on "OK" and when you click "Cancel"
+      -- Run function parseInt() and function parseFloat() 
+         on the next values: 15.5, '12asdf', '1024.34asdf', 
+         7.82, 'asdf', '', null, undefined. 
+         What is the output of each and what is it's data type?
+         (You may do this by creating and using a function, like 
+
+         function checkParse(str) { 
+
+            console.log(`parseInt(${str}) value: ${parseInt(str)}, datatype: ${typeof parseInt(str)}`);
+
+            console.log(`parseFloat(${str}) value: ${parseFloat(str)}, datatype: ${typeof parseFloat(str)}`);
+
+         }
+
+         checkParse(15.5);
+         checkParse('12asdf');
+         checkParse('1024.34asdf');
+         checkParse(7.82);
+         checkParse('asdf');
+         checkParse('');
+         checkParse(null);
+         checkParse(undefined);
+
+         )
+
+4. Calculate age. Write function that gets a birth year 
+    of a person, birth month and birth day,
+    gets the current date by the next statements:
+
+        var currDate = new Date();
+        var currYear = currDate.getFullYear();
+        var currMonth = currDate.getMonth();
+        var currDay = currDate.getDate();
+
+   and returns the age of the person. Pay attention that getMonth() 
+   returns month number (0 - January, 1 - February, 2 - March, etc.),
+   so you may make month input by number too.
+
+5. Write a function that gets first name, birth year, month, day 
+    and the age of retirement, uses "calculate age" function 
+    from the previous exercise and outputs to the console 
+    results like "John is going to retire 14 years from now",
+    "Jane is already retired".
+
+6. Copy by HTML and CSS some part of the table 
+             of the olympic days from the picture of the table:
+             Olympics-2016-tab-practice.jpeg
+
+             For the symbols you may use the pictures from 
+             ./img/olympic/ directory.
+
+             Pay attention that *.svg files can be used like 
+             regular images at <img> tag.
+
+             There is no need to copy the whole table, just
+             a part - to ensure that you know how to do this.
+
+
