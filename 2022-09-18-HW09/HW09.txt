@@ -1,0 +1,43 @@
+1. Two-Number Calculator. 
+   Put this program into mango/your-name/two-num-calc directory.
+   The program gets by prompt() two numbers and a sign
+   (three prompts in total), 
+   and shows the result of the appropriate calculation.
+   The sign should be one of: +, -, *, /, 
+   % (should show the whole part and the remainder), ^ (power).
+   Create functions add(), subtract(), multiply(), divide(), 
+   divideIntegers(), power().
+   Use switch. In each case call the appropriate function.
+   
+2. Write a function that gets a year and a month, 
+   use switch(month) to return the number
+   of days in the given month of this year.
+
+   Remember that you know how to determine the number 
+   of days in February.
+
+   Hint is below all the missions.
+
+
+3. FOR loop.
+
+   a) Make the program to write 15 times
+      `I'll never tell lies`
+
+   b) Start from 3, go until 19. 
+      Show all the odd numbers, 
+      including 3 and 19.
+
+   c) Go from 25 until -16.
+      Starting with 25 and for each fifth
+      number show it's square root 
+      (use Math.sqrt()) if it is possible,
+      and show it's absolute value 
+      (use Math.abs())
+ 
+
+      
+Hint for 2: There are months that have the same number
+            of days, like April, June, September, November.
+
+            Stack their cases together without "break".
