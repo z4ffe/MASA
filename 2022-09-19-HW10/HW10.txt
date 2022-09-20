@@ -1,0 +1,71 @@
+1. Add to your "like Wiki" page:
+   a) Some table that uses colgroup tag and border-spacing property
+      (see the example at colgroup-border-spacing.html/css)
+   b) Some pictures that use shape-outside and object-fit properties
+      (see the example at shape-outside.html/css)
+
+2. FOR loop
+   a) Write a function that gets a number and uses a "for" loop 
+      to find a sum of all the numbers from 1 till this number (including), for example:
+
+      sumFromOneTillNum(6);
+      21
+
+      sumFromOneTillNum(1);
+      1
+
+   b) Write a function that gets a number and uses a "for" loop 
+      to show all the even numbers from 2 till this number (including it, if it is even).
+      Show them in one row, for example:
+
+      showEven(9);
+      8 6 4 2
+
+   c) Write a function that gets a string and uses a "for" loop 
+      to show each letter from the end to the beginning.
+      If you show them in one row - it means you reverted the word!
+
+      For example:
+
+      revertTheWord('cat');
+      t a c
+
+3. Pay attention. New string function: str.repeat(n).
+   This function repeats the string n times.
+   Write a function that gets a number, uses '*'.repeat() and creates right-angled triangle
+   of stars with the given number of rows, for example:
+
+   starTriangle(5);
+
+   *
+   **
+   ***
+   ****
+   *****
+
+4. Write a function that prepares the given word for "Hangman" game:
+   it gets the word and returns string that consists of the first 
+   and the last characters 
+   of the word in upper case and the right number of hyphens between them. 
+   Example outputs:
+
+   console.log(prepareWordForHangman('strawberry'));
+   
+   S--------Y
+
+   console.log(prepareWordForHangman('caramel'));
+
+   C-----L
+
+   console.log(prepareWordForHangman('I'));
+
+   ERROR
+
+   console.log(prepareWordForHangman(''));
+
+   ERROR
+
+   console.log(prepareWordForHangman());
+
+   ERROR
+

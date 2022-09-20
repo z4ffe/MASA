@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background: salmon;
+    padding: 0 24px;
+}
+
+
+
+/* nav is a direct parent of ul, ul is a direct parent of li */
+nav > ul > li {
+    display: inline-block;
+    padding: 16px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.btn {
+
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: cornflowerblue;
+    color: white;
+    border: 1px solid navy;
+    border-radius: 2px;
+    margin: 24px 16px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: color 3s ease;
+}
+
+.btn:hover {
+
+    background-color: navy;
+    color: orange;
+
+}
+
+/* :visited, :link - pseudo classes of link*/
+a.btn, a.btn:visited, a.btn:link {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+

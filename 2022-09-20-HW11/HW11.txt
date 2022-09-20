@@ -1,0 +1,109 @@
+1. Make changes to the navigation, that 
+   was prepared earlier (like in inline-block-nav.html 
+   and inline-block-nav.css) - cause it's buttons 
+   to change while hovering over or clicking 
+   and treat the links to look like you prefer
+
+2. More of "for" loop.
+   a) Get input number (small integer),  
+      and draw a square with the side of this number of stars,
+      for example (the number is 4): 
+      ****
+      ****
+      ****
+      ****
+
+      The hint for this exercise is below all the exercises
+
+   b) Write a function that gets a word, goes 
+      over it's letters and creates new string,
+      where vowels are omitted (without a,e,i,o,u).
+      For example, it gets "strange" and returns "strng",
+      gets "astonishment" and returns "stnshmnt".
+
+      The hint for this exercise is below all the exercises
+
+3. Arrays.
+   a) var animals = ['cAt','DoG','giRaFFe','LION','tiGer','monkey']
+
+      Go over the words in the array - exchange each word
+      by the same word, but in the lowercase.
+
+      Show the array after the loop.
+
+      Can you change one word to lowercase and the next to uppercase and so on?
+
+      Example of the output:
+      console.log(`after the change "animals":`,animals);
+      ['cat','DOG','giraffe','LION','tiger','MONKEY']
+
+   b) Go over the previous array. For each word show at the console 
+      the first and the last letter. Example (not neccessary to change the case):
+
+                ct
+                dg
+                ge
+                ln
+                tr
+                my
+
+   c) Go over the previous array. Show the animals at the console 
+      numbered by their order. Example:
+
+               1. cat
+               2. dog
+               3. giraffe
+               4. lion
+               5. tiger
+               6. monkey
+
+   d) Do the same, but start from the end. Example:
+
+               1. monkey
+               2. tiger
+               3. lion
+               4. giraffe
+               5. dog
+               6. cat
+      
+   e) var adjectives = ['black','curious','spotted','scary','striped','happy']
+
+      Go over the animal array and show each animal together with 
+      an adjective. Example:
+
+             black cat 
+             curiuos dog
+             spotted giraffe
+             scary lion 
+             striped tiger
+             happy monkey
+
+   f) Do the same, but combine the words in the reverse order. Example:
+
+              happy cat
+              striped dog
+              scary giraffe
+              spotted lion
+              curious tiger 
+              black monkey
+
+   g) Go over the array of the words and combine them into one string.
+      (Hint: declare the string before the loop and make it empty string)
+
+      var words = ['I','am','never','too','late',',','the','others','are','just','too','early']
+
+   h) Go over the array and find average of all the numbers:
+      (Hint: you should find their sum, and when the loop stops, 
+             divide the sum by the amount of numbers.
+             So declare the variable of the sum before the loop
+             and assign it zero)
+
+      var num = [44, 22, 33, 11, -66, -88, 22, 33]
+
+Hint for 2 a): use str.repeat()
+Hint for 2 b): Create empty output string before the loop.
+               Inside the loop body use IF that checks that
+               the current letter not equal to 'a', 'e','i','o' 
+               or 'u' - in the case that it is not a vowel,
+               concatenate it with the output string.
+
