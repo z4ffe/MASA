@@ -30,26 +30,35 @@ nav a {
     display: inline-block;
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: cornflowerblue;
+    background-color: cornflowerblue;
     color: white;
-    border: 1px solid navy;
+    border: 1px solid transparent;
     border-radius: 2px;
     margin: 24px 16px;
     padding: 6px 16px;
     cursor: pointer;
-    transition: color 3s ease;
+    transition: 1s ease;
 }
 
 .btn:hover {
-
     background-color: navy;
     color: orange;
+    border: 1px solid cornflowerblue;
+}
 
+.btn:active {
+    transform: rotate3d(1, 0, 1, 180deg);
 }
 
 /* :visited, :link - pseudo classes of link*/
 a.btn, a.btn:visited, a.btn:link {
     text-decoration: none;
+    transition: .3s ease;
+}
+
+
+a.btn:hover, a.btn:active {
+    text-decoration: underline;
 }
 
 

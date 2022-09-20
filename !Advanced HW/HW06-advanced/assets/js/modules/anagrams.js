@@ -27,7 +27,7 @@ export class Anagrams {
 		this.#render()
 	}
 
-	#render () {
+	#render() {
 		elem.anagramAnswer.textContent = `Number of anagrams: ${this.answer}`
 	}
 
@@ -39,22 +39,14 @@ export class Anagrams {
 	}
 
 	app() {
-		this.userAnagram = elem.anagramUserInput.value.replaceAll(/['. !?"_-]/g, '').split(',')
-		this.#checkAnagram()
+		if (elem.anagramUserInput.value === elem.findAnagramInput.value) {
+			elem.anagramAnswer.textContent = `It's same word!`
+		} else {
+			this.userAnagram = elem.anagramUserInput.value.replaceAll(/['. !?"_-]/g, '').split(',')
+			this.#checkAnagram()
+		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // test
@@ -114,7 +106,7 @@ class Anagrams {
 		elem.findAnagramInput.value = `${this.anagrams[this.randomIndex]}`
 	}
 
-	app() {
+	modules() {
 		this.userAnagram = elem.anagramUserInput.value.split(',')
 		this.#checkAnagram()
 	}
