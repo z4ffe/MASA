@@ -1,0 +1,657 @@
+1. String and array functions - substring(), indexOf(), trim(),
+                                trimStart(), trimEnd(), pop(), 
+                                push(), shift(), unshift().
+
+   a) Capitalize. User enters a word, and sees in the output 
+   the word with the 1st capital letter 
+   and other letters in lowercase. 
+   (The hint for the exercise is below all the exercises)
+
+
+   b) var animals = ['cAt','DoG','giRaFFe','LION','tiGer','monkey']
+
+      Go over the array. For each word show at the console 
+      first two letters. Example:
+
+                ca
+                do
+                gi
+                li
+                ti
+                mo
+
+   (The hint for the exercise is below all the exercises)
+
+   c) const colors = ['blue','yellow','orange','green']
+      const drinks = ['tea','coffee','milk','water','juice']
+
+      Use pop(), push(), shift(), unshift() and some variables to exchange 
+      the first elements of the above arrays between them, and
+      to exchange their last elements too.
+
+   d) let str=`"Be strong", I wispered to my WIFY sygnal`.
+      Find the indexes of the quotes (индексы двойных кавычек).
+      Find the starting indexes of the strings "WI/wi".
+      Find the starting index of the string "strange" or tell
+      if it is not there
+
+   e) const colors = ['   red','    white   ','   yellow ','green   ','  lime  ',' purple ','   blue','teal   ',' aquamarine   ','  turquoise ']
+    
+      I With FOR loop go over the array and show all it's members without the spaces 
+      II With FOR loop go over the array and show all the members with even indexes 
+         without the spaces at the left, and all the members with odd indexes without 
+         the spaces at the right
+
+2. How many 
+   a) gigabytes are there in 4398046511104 Bytes?
+   a) bytes are there in 2.8Gb?
+
+3. Perform only approximate calculation of 
+   a) how many bytes are there in 35Gb
+   b) how many gigabytes are there in 78574390129 bytes
+
+4. "while" loop.
+   a) Only even. User is prompted for an integer. 
+      The app asks him to continue
+      to enter integers untill he enters an even number. 
+
+   b) Right password. The app asks the user to enter a password.
+      It stops only when the user enters the word "Password"
+      or "password".
+
+   c)  Create a function checkMultiplication() 
+       that gets 2 numbers as parameters 
+       and asks the user (with prompt())
+       the result of multiplication of these 2 numbers.
+
+       If the answer is wrong, the function starts the loop
+       "while" which will stop when there is right answer, 
+       or "stop" or no answer.
+
+       Examples: 
+       checkMultiplication(11,11);
+       checkMultiplication(1,1045);
+       checkMultiplication(-45.3,0);
+
+    d) Create a function showUpper() that gets an array of words, 
+       goes over it, shows each word in upper case
+       and stops when there is an empty string.
+
+       Arrays for example:
+       const words1 = ['stone','water','sand','oil','fire','','mist','rain'];
+       const words2 = ['stand','dance','run','jump',''];
+       const words3 = ['','stupid','smart','swift'];
+       const words4 = [''];
+       const words5 = [];
+       const words6 = ['code','letter','digit','number','cifer'];
+       
+       Run the function at least 6 times - with each of 
+       the previous arrays as a parameter.
+
+    e) Create a function sumUntilMax() that gets an array of 
+       numbers and a maximal sum, goes over the array,
+       sums the numbers, stops when the sum is equal 
+       or greater than the maximum and shows the current sum.
+
+       const nums1 = [10, 15, 6, 5, 4, 100, 21];
+       const nums2 = [0, 1, 3, 0, 7, 7];
+       const nums3 = [];
+       const nums4 = [12];
+
+       Examples: 
+       sumUntilMax(nums1, 33)
+       Output: 36
+
+       sumUntilMax(nums1, 141)
+       Output: 161
+
+       sumUntilMax(nums2, 33)
+       Output: 18
+
+       sumUntilMax(nums2, 0)
+       Output: 0
+
+       sumUntilMax(nums3, 33)
+       Output: 0
+
+       sumUntilMax(nums4, 33)
+       Output: 12
+
+       sumUntilMax(nums4, 11)
+       Output: 12
+
+************************************************************************************************
+MORE TRAINING
+************************************************************************************************
+FOR loop
+
+Level 1.1 Ваша программа получает 3 целых числа - 
+   минимум, максимум и шаг. Она запускает
+   цикл "for" и выдает все числа, кот.
+   при этом получатся 
+  
+   Пример:
+   var min = -2, max = 10, step 2
+
+   Console:
+   -2
+   0
+   2
+   4
+   6
+   8
+   10
+
+   Пример:
+   var min = -4, max = -6, step 3
+
+   Console:
+   
+   Пример:
+   var min = -1, max = 2, step 5
+
+   Console:
+   -1
+   
+
+Level 1.2 Ваша программа получает максимум. 
+         Она выдает в диапазоне от нуля
+         до максимума (не включая ноль
+         и максимум) все числа, кот. делятся
+         на 6.
+   
+
+   Пример:
+   var max = 14
+
+   Console:
+   6
+   12
+
+   Пример:
+   var max = 24
+
+   Console:
+   6
+   12
+   18
+
+   Пример:
+   var max = 5
+
+   Console:
+
+Level 2.1 Ваша программа получает максимум. 
+         Она выдаёт все числа с большего
+         по меньшее в диапазоне от
+         максимума до -1
+ 
+   Пример:
+   var max = 4
+
+   Console:
+   4
+   3
+   2
+   1
+   0
+   -1
+
+   Пример:
+   var max = -1
+
+   Console:
+   -1
+
+   Пример:
+   var max = 0
+
+   Console:
+   0
+   -1
+
+   Пример:
+   var max = -4
+
+   Console:
+   
+Level 2.2 У вас есть функция Math.abs() - 
+         она находит абсолютную величину
+         числа (модуль).
+         Ваша программа получает максимум
+         (целое неорицательное). 
+         Она проходит по всем числам от
+         максимум*(-1) до максимума и
+         вызывает для каждого из них
+         функцию Math.abs().
+ 
+   Пример:
+   var max = 3
+
+   Console:
+   3  
+   2
+   1
+   0
+   1
+   2
+   3
+
+   Пример:
+   var max = 0
+
+   Console:
+   0
+
+Level 3.1 Ваша программа получает максимум.
+         Напишите функцию, кот. получает
+         число, возводит его в 3-ю степень
+         и вычитает 4.
+         Ваша программа проходит от 0
+         до максимума (не включая максимум)
+         и вызывает функцию для каждого
+         числа.
+ 
+   Пример:
+   var max = 5
+
+   Console:
+   -4
+   -3
+   4
+   23
+   60
+
+   Пример:
+   var max = 0
+
+   Console:
+   -4
+
+Level 3.2 Похоже на задачу 2-го уровня, но
+         с модификацией.
+         Ваша программа получает максимум
+         (целое число - м.б. как 
+         отрицательным, так и
+         положительным). 
+         Она проходит по всем числам от
+         максимум*(-1) до максимума и
+         вызывает для каждого из них
+         функцию Math.abs().
+ 
+   Пример:
+   var max = 3
+
+   Console:
+   3  
+   2
+   1
+   0
+   1
+   2
+   3
+
+   Пример:
+   var max = 0
+
+   Console:
+   0
+
+   Пример:
+   var max = -4
+
+   Console:
+   4
+   3  
+   2
+   1
+   0
+   1
+   2
+   3
+   4
+
+Level 3.3 Ваша программа получает число
+         (натуральное) и находит 
+         факториал (!) этого числа. 
+         (Факториал - произведение всех
+          чисел от 1 до самого числа)
+         0! = 1 (Факториал нуля равен 1)
+ 
+   Пример:
+   var num = 5
+
+   Console:
+   120
+
+   Пример:
+   var num = 0
+
+   Console:
+   1
+
+   Пример:
+   var num = 1
+
+   Console:
+   1
+
+Level 3.4 Ваша программа получает 3 целых числа - 
+   минимум, максимум и шаг (числа подобраны так,
+   чтобы концы промежутка обязательно попадали
+   в ответ). Она создает
+   два массива. В первом - все числа, кот.
+   попадают в заданный промежуток с заданным
+   шагом. Во втором - все те же числа, но
+   в обратном порядке. 
+  
+   Пример:
+   var min = -4, max = 11, step 3
+
+   Console:
+   [-4, -1, 2, 5, 8, 11]
+   [11, 8, 5, 2, -1, -4]
+
+   Пример:
+   var min = 20, max = 4, step -4
+
+   Console:
+   [20, 16, 12, 8, 4]
+   [4, 8, 12, 16, 20]
+
+   Пример:
+   var min = -3, max = 2, step 5
+
+   Console:
+   [-3]
+   [-3]
+
+Level 4.1 Ваша программа получает массив
+   чисел и отдельное число.
+   Она проходит по нему циклом "for" и
+   увеличивает каждый элемент массива
+   на заданное число.
+   
+   Пример:
+   var arr = [-3.4, 3.7, 0, 5.6, 0.5], num = 2
+
+   Console:
+   [-1.4, 5.7, 2, 7.6, 2.5]
+
+   Пример:
+   var arr = [], num = 3
+
+   Console:
+   []
+
+   Пример:
+   var arr = [-8], num = 10
+
+   Console:
+   [2]
+ 
+   Пример:
+   var arr = [4.5, 0, 2.8, -15, -12.3], num = -2.8
+
+   Console:
+   [1.7, -2.8, 0, -17.8, -15.1]
+
+Level 4.2 Ваша программа получает массив
+   чисел.
+   Напишите функцию, кот. находит 
+   абсолютное значение числа (модуль), а
+   потом вычисляет его квадратный корень
+   при помощи Math.sqrt() и выдает
+   результат. Пройдитесь циклом "for"
+   по массиву и вызовите вашу функцию
+   для каждого числа так, чтобы результаты
+   образовали новый массив.
+   
+   Пример:
+   var arr = [6.25, -0.36, 0, 1, -144]
+
+   Console:
+   Old array: [6.25, -0.36, 0, 1, -144]
+   New array: [2.5, 0.6, 0, 1, 12]
+
+   Пример:
+   var arr = [-121]
+
+   Console:
+   Old array: [-121]
+   New array: [11]
+
+   Пример:
+   var arr = []
+
+   Console:
+   Old array: []
+   New array: []
+
+Level 4.3 Ваша программа получает 
+   два массива одинаковой длины -
+   массив чисел и массив строчек.
+   Вычислите одним циклом "for" 
+   сумму всех чисел, и соедините
+   все строчки в одну.
+   
+   Пример:
+   var arrNum = [6.25, -0.36, 0, 1, -144]
+   var arrStr = ['O ','la-la, ','what ','a ','day!']
+
+   Console:
+   -137.11
+   'O la-la, what a day!'
+
+   Пример:
+   var arrNum = [-121]
+   var arrStr = ['']
+
+   Console:
+   -121
+
+Level 5.1 Ваша программа получает массив.
+    Используя цикл "for", пройдите по
+    всем элементам массива до предпоследнего
+    и замените каждый из них на следующий.
+    Последний элемент замените на строчку
+    'I did it!'
+
+   Пример:
+   var arr = [6.25, -0.36, 0, 1, -144]
+
+   Console:
+   Original array: [6.25, -0.36, 0, 1, -144]
+   The same array after the change: [-0.36, 0, 1, -144, 'I did it!']
+
+   Пример:
+   var arr = [true, false, false, false, true, true]
+
+   Console:
+   Original array: [true, false, false, false, true, true]
+   The same array after the change: [false, false, false, true, true, 'I did it!']
+
+   Пример:
+   var arr = ['lala','Great Scott!']
+
+   Console:
+   Original array: ['lala','Great Scott!']
+   The same array after the change: ['Great Scott!', 'I did it!'] 
+
+   Пример:
+   var arr = ['I am hungry']
+
+   Console:
+   Original array: ['I am hungry']
+   The same array after the change: ['I did it!'] 
+
+   Пример:
+   var arr = []
+
+   Console:
+   Original array: []
+   The same array after the change: [] 
+
+Level 5.2 Ваша программа получает массив.
+    Сделайте так, чтобы каждый элемент 
+    массива, кроме последнего, оказался
+    заменен на следующий.
+    Последний элемент замените на строчку
+    'I did it!' - в этой задаче результат
+    должен быть тот же, что и в предыдущей, 
+    но нельзя пользоваться циклом, а 
+    требуется использовать некоторые 
+    из методов массивов, кот. мы изучали 
+    (push(), pull(), shift(), unshift())
+
+   Пример:
+   var arr = [6.25, -0.36, 0, 1, -144]
+
+   Console:
+   Original array: [6.25, -0.36, 0, 1, -144]
+   The same array after the change: [-0.36, 0, 1, -144, 'I did it!']
+
+   Пример:
+   var arr = [true, false, false, false, true, true]
+
+   Console:
+   Original array: [true, false, false, false, true, true]
+   The same array after the change: [false, false, false, true, true, 'I did it!']
+
+   Пример:
+   var arr = ['lala','Great Scott!']
+
+   Console:
+   Original array: ['lala','Great Scott!']
+   The same array after the change: ['Great Scott!', 'I did it!'] 
+
+   Пример:
+   var arr = ['I am hungry']
+
+   Console:
+   Original array: ['I am hungry']
+   The same array after the change: ['I did it!'] 
+
+   Пример:
+   var arr = []
+
+   Console:
+   Original array: []
+   The same array after the change: []
+
+Level 5.3 Ваша программа получает 
+   рациональное число и целое число.
+   Она возводит рациональное число
+   в степень целого числа, не пользуясь
+   функцией Math.pow() или оператором, 
+   а, используя if для разных случаев,
+   и цикл "for".
+
+   Пример:
+   var num = 2.5, pow = 3
+
+   Console:
+   15.625
+
+   Пример:
+   var num = 0, pow = 14
+
+   Console:
+   0
+
+   Пример:
+   var num = 1, pow = -23
+
+   Console:
+   1
+
+   Пример:
+   var num = -1, pow = -133
+
+   Console:
+   -1 
+
+   Пример:
+   var num = 3, pow = -4
+
+   Console:
+   0.012345679012345678
+
+   Пример:
+   var num = -245.44, pow = 0
+
+   Console:
+   1
+
+   Пример:
+   var num = -2, pow = 12
+
+   Console:
+   4096
+
+Ternary operator
+
+   a) Create a function makeDecision(), that asks what 
+      the user has decided (Y/N).
+
+      Use variable "action" and ternary operator. 
+      If the decision is 'Y', fill the variable "action" 
+      with the value
+      "do it", otherwise - with the value "don't do it".
+      The function should log the action to the console.
+
+      Examples:
+      makeDecision() asks for the decision and gets 'Y',
+      the output:
+      "Do it"
+
+      makeDecision() asks for the decision and gets 'N',
+      the output:
+      "Don't do it"
+
+   b) Create a function checkPassed() that asks a student about 
+      the exam grade. Create "result" 
+      variable. Use ternary operator to check 
+      if the grade is greater than 60 and then put "passed" 
+      into the "result" variable, otherwise put "failed"
+      into the "result" variable.
+      Conclude with the next sentence:
+
+      console.log(`You ${result} the exam.`);
+
+      We assume that the input is always valid, and it is
+      an integer from 0 to 100.
+
+      Examples: 
+      checkPassed() asks for a grade, gets 60, 
+      shows "You failed the exam."
+
+      checkPassed() asks for a grade, gets 77, 
+      shows "You passed the exam."
+
+      checkPassed() asks for a grade, gets 31, 
+      shows "You failed the exam."
+
+   c) Add to a) ternary operator inside to react to the option 
+      when the answer is not Y and not N
+
+   d) Add to b) ternary operator inside to react to the option 
+      when the grade is not in the range between 0 and 100
+
+   e) Ask user which color is her car.
+      If it is blue, tell her: "Like a sky", if it is red, tell her: 
+      "It suits your eyes"
+
+   f) Ask user which color and what company is her car.
+      If it is blue, tell her: "Like a sky", if it is red,  
+      check which company it is, and if it is 'Toyota", 
+      tell her: "Like a sun on Japanese flag". If it is not,
+      tell her: "Like a tomato"
+
+
+1 a)-Hint. Use [] and change the case of the first letter. 
+        Use substring() and take all the word without the first letter, 
+        change it's case to the lower. 
+        Add together the two expressions.
+
+1 b)-Hint. Use substring()

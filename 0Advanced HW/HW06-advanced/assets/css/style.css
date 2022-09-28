@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	--font-and-border-color: #fff;
+	--button-ta-color: cornflowerblue;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background-color: #000000;
+	background-image: url(../img/stars_above.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	color: var(--font-and-border-color);
+}
+
+.above,
+.below {
+	display: flex;
+	height: 50%;
+}
+
+h2 {
+	font-family: 'carmelit_boldbold', sans-serif;
+	color: var(--font-and-border-color);
+	margin-left: 7px;
+}
+
+button,
+textarea,
+input {
+	vertical-align: bottom;
+	margin: 0.4vw;
+	padding: 0.3vw;
+	border-radius: 0.2vw;
+	background-color: var(--button-ta-color);
+	color: var(--font-and-border-color);
+	border: none;
+}
+
+textarea,
+input {
+	background-color: rgba(100, 149, 237, 0.4);
+}
+
+
+.desc {
+	margin-top: 1vw;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.above>div,
+.below>div {
+	margin: 0.5vw;
+	padding: 0.5vw;
+	border: 1px solid var(--font-and-border-color);
+	border-radius: 0.5vw;
+}
+
+.above p,
+.below p {
+}
+
+/* Palindromes */
+
+.palindromes {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.pali-container {
+	display: flex;
+}
+
+/*.texta-container {
+	flex-grow:2;
+}*/
+.the-palindrome {
+	flex-grow: 2;
+}
+
+.pali-container2 {
+	flex-basis: content;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.yes-no,
+.res-calc,
+.your-points,
+.comp-points,
+.anagram-reaction {
+	font-size: 1.5vw;
+	letter-spacing: 0.2vw;
+	text-shadow: 0 0 0.5vw #fff, 0 0 1vw #fff, 0 0 1.5vw #e60073;
+}
+
+/* Clock */
+
+.clock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: auto;
+	min-width: 230px;
+}
+
+.time {
+	display: flex;
+	font-size: 2vw;
+	letter-spacing: 0.2vw;
+	width: 100%;
+	justify-content: center;
+}
+
+.date {
+	font-size: 1.5vw;
+	letter-spacing: 0.2vw;
+}
+
+/* Gematria */
+
+.gematria {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.gematria>h2,
+.gem-input {
+	direction: rtl;
+}
+
+.gem-container {
+	direction: rtl;
+	display: flex;
+}
+
+.res-calc {
+	line-height: 3vw;
+}
+
+/* words inside */
+.words-inside {
+	display: flex;
+	align-items: stretch;
+	width: 86%;
+}
+
+.col.one {
+	display: flex;
+	flex-direction: column;
+	flex-basis:0;
+}
+
+.col.two {
+	flex-grow:1;
+}
+
+.col.three {
+	flex-grow:1;
+}
+
+.your-words,
+.comp-words {
+	height: 82%;
+	display: block;
+	width: 95%;
+}
+
+.y-words-div,
+.c-words-div {
+	height: 82%;
+	overflow-y: scroll;
+	margin-left: 10px;
+	margin-top: 5px;
+	min-width: 95%;
+	display: block;
+	border: 1px none #ddd;
+	border-radius: 3px;
+	background-color: rgba(100, 149, 237, 0.4);
+	padding-left: 5px;
+}
+
+.words-inside>.one>p,
+.anagrams .desc {
+	font-size: 0.8rem;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.red {
+	color: red;
+}
+
+/* Anagrams */
+.flex-container {
+	display: flex;
+}
+
+label {
+	word-wrap: break-word;
+	flex-basis: 0;
+}
+
+.the-answer,
+#comp-anagram {
+	display: none;
+}
+
+.anagram-reaction {
+	word-wrap: break-word;
+}
+
+.quotes {
+	width: 650px;
+}
+
+.yes-no {
+	min-width: 200px;
+}
+
+.hebrew-title {
+	margin-right: 7px;
+}
+
+.anagrams {
+	min-width: 400px;
+}
+
+#gem-input {
+	width: 180px;
+}
+
+button {
+	cursor: pointer;
+	transition: 0.2s;
+	border: 1px solid transparent;
+}
+
+button:hover {
+	transform: scale(102%);
+	border: 1px solid white;
+}
+
+button:active {
+	transform: scale(98%);
+	border: 1px solid gray;
+}
+
+.hide {
+	display: none;
+}
+
+@media screen and (max-width: 961px) {
+	.above, .below {
+		display: flex;
+		flex-direction: column;
+		min-width: 100%;
+	}
+	.above {
+		margin-bottom: 45px;
+	}
+	.quotes {
+		width: 100%;
+	}
+}
