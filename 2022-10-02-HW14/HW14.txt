@@ -1,0 +1,87 @@
+1. Continue from the previous homework. Use HW13-ex03.html that we've created.
+
+   a) Why findAll1() "while" loop not checks the length of the string and works OK?
+   b) Create findAll2() by changing findAll1() to work with while(true)
+   c) Create findAll3() by changing findAll1()
+    to work without indexOf - by checking each character of the string
+
+
+2. Continue from the previous homework. Use HW13-ex05.html with the solution 
+   of HomeWork13 - exercise 5.
+
+   a) Check the solution 
+   b) Invent input (array of spaces and empty strings) to the function that it's output will be 
+      ****************
+      ****************
+      *****      *****
+      *****      *****
+      *****      *****
+      ****************
+      ****************
+   c) Take function (we had in one of the previous HW) that creates a triangle 
+      lke 
+      *
+      **
+      ***
+      ****, use padStart() (and spaces inside) and make this triangle equilateral, like:
+
+         *
+        * *
+       * * *
+      * * * *
+
+3. Use relative-units.html and relative-units-start.css.
+
+   Add to relative units-start.css 
+    a) width: 40%; for the class "fourty" inside .percents and
+       width: 40vw; for the class "fourty" inside .vw
+
+    b) font-size: 2em for the class .em
+       font-size: 2rem for the class .rem
+
+    c) font-size: 2em for the class .inner inside .em
+       font-size: 2rem for the class .inner inside .rem
+
+    d) font-size: 1em for the class .inner2 inside .em
+       font-size: 1rem for the class .inner2 inside .rem
+
+   Is it clear how the sizes depends on %,vw,em and rem here?
+
+
+4. Continue "Like Wiki"
+
+   a) use variable for some color.
+      Example: 
+
+      :root {
+         --main-color: #999999;
+      }
+
+      .some-div {
+         background-color: var(--main-color);
+      }
+
+   b) use somewhere units: %, vw, vh, em, rem
+
+5. New function of strings an arrays. includes(). It returns true or false.
+
+   a) Whrite function that gets a string and checks if it includes 
+      '123', 'abc' or 'ABC'. 
+
+      Run this function for the next inputs: '0123456', '', 'JKABCLM123', 'table'
+
+   b) Write a function that checks that the given array contains 'Ashdod' or 'Rechovot'. 
+
+      Run this function for the next inputs: 
+      ['Ashdod','Jerusalem','Ashquelon','Beer-Sheva'],
+      [],
+      ['Tel-Aviv','Bnei-Brak','Rechovot'],
+      ['Rechovot'],
+      [1,2,3,3,4]
+   
+   c) How do you make a) and b) with indexOf() instead of includes() ?
+
+
+
+
+

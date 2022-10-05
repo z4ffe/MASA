@@ -1,0 +1,154 @@
+17. One more way to pass props: as "inner HTML" 
+    (inner JSX). For example, in Gallery.jsx:
+
+<Masterpiece painting={paintings[0].name} painter={paintings[0].painter} date={paintings[0].date} src={paintings[0].src}>{paintings[0].desc}</Masterpiece>
+
+    The part that is between the opening <Masterpiece> 
+    and the closing </Masterpiece> in props is assigned 
+    to the property "children" (as children of Masterpiece).
+
+
+    So now we change all the entries in the Gallery return(),
+    to pass children:
+
+  return (
+    <div id='gallery'>
+        <Masterpiece painting={paintings[0].name} painter={paintings[0].painter} date={paintings[0].date} src={paintings[0].src}>{paintings[0].desc}</Masterpiece>
+        <Masterpiece painting={paintings[1].name} painter={paintings[1].painter} date={paintings[1].date} src={paintings[1].src}>{paintings[1].desc}</Masterpiece>
+        <Masterpiece painting={paintings[2].name} painter={paintings[2].painter} date={paintings[2].date} src={paintings[2].src}>{paintings[2].desc}</Masterpiece>
+        <Masterpiece painting={paintings[3].name} painter={paintings[3].painter} date={paintings[3].date} src={paintings[3].src}>{paintings[3].desc}</Masterpiece>
+    </div>
+  )
+
+18. And in Masterpiece.jsx we now use the children:
+
+const Masterpiece = (props) => {
+    return (
+        <div className='masterpiece'>
+            <h1 className='painting-name'>{props.painting}</h1>
+            <h2 className='painter-name'>{props.painter}, {props.date}</h2>
+            <p>{props.children}</p>
+            <img src={props.src} alt="" />
+        </div>
+    );
+}
+
+export default Masterpiece;
+
+19. But what if there whould be more entries in the array?
+
+Let's get back to Gallery.jsx and rewrite it slightly:
+
+................................................................
+      const allMasterpieces = paintings.map(painting =>
+          <Masterpiece painting={painting.name} painter={painting.painter} date={painting.date} src={painting.src}>{painting.desc}</Masterpiece>
+     
+        )
+
+  return (
+    <div id='gallery'>
+        {allMasterpieces}
+    </div>
+  )
+
+20. Now we see at the console the next warning:
+
+Warning: Each child in a list should have a unique "key" prop.
+
+"key" is an attribute that is important for React - it enables 
+React to render only the needed parts of the list (when 
+we program actions like deletion, adding or update of the entries).
+
+We can add it at different steps and in different ways, depending on the context.
+Here it is convenient just to use the index of the "paintings" array.
+
+In Gallery.jsx:
+
+const allMasterpieces = paintings.map((painting,ix) =>
+          <Masterpiece painting={painting.name} painter={painting.painter} date={painting.date} src={painting.src} key={ix}>{painting.desc}</Masterpiece>
+)
+
+Ensure that the warning has gone.
+
+21. Let's make everything more convenient again and create file components/data.js 
+
+and put there the array:
+
+export const paintings = [
+        {
+          name: "Jacob’s dream",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Jacob_s_dream_1605.jpg",
+          desc: "The dream about the divine ladder and the angels",
+          date: "circa 1605"
+        },
+        {
+          name: "Poultry Merchant",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Poultry_Merchant_1620_1643.jpeg",
+          date: "between 1620 and 1643"
+        },
+        {
+          name: "Still-Life of Kitchen Utensils",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Still-Life_of_Kitchen_Utensils_1610_1643.jpg",
+          date: "between 1610 and 1643"
+        },
+        {
+          name: "Kitchen Still-Life",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Kitchen_Still-Life_1608_1610.jpg",
+          date: "between 1608 and 1610"
+        }
+      ];
+
+
+Now Gallery.jsx looks clearer:
+
+import Masterpiece from './Masterpiece';
+import { paintings } from './data';
+
+export default function Gallery() {
+
+  const allMasterpieces = paintings.map((painting,ix) =>
+      <Masterpiece painting={painting.name} painter={painting.painter} date={painting.date} src={painting.src} key={ix}>{painting.desc}</Masterpiece>
+  
+    )
+
+  return (
+    <div id='gallery'>
+        {allMasterpieces}
+    </div>
+  )
+}
+
+******************************************************
+******************************************************
+***             MISSION MISSION MISSION            ***
+******************************************************
+******************************************************
+
+22. We'll add more painters to public/img:
+
+    public/img/->
+
+            Cornelis_Jacobsz_Delff
+            Jan_van_Huysum
+            Rachel_Ruysch
+            Willem_Kalf
+
+23. You've got starter example of array of data for the several painters painters.js
+
+Fill it for the other painters
+
+24. Add between "Gallery" layer and "Masterpiece" layer the "Painter" layer.
+Gallery will now consist of Painters. And Painter will consist of painter name, 
+bio and Masterpieces. 
+
+The result could look like at gallery-example01.png
+
+(Change index.css to make the layout to suit the new component hierarchy)
+
+
+
+

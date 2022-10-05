@@ -44,39 +44,15 @@ class Typer {
 		return tempArr[randomNumber - 1]
 	}
 
+	// 'математика' as master word
+	
 	#verificationWords() {
-		elem.yourWordsFinal.innerHTML = ''
-		elem.compWordsFinal.innerHTML = ''
-		let userWords = elem.yourWords.value.trim().split(`\n`)
-		let aiWords = []
-		let tempCurrentWord = this.currentWord.split('').sort().join('')
-		this.vocabArr.forEach(w => {
-			let tempResult = 0;
-			let word = w.split('').sort().join('')
-			for (let i = 0; i < word.length; i++) {
-				for (let j = 0; j < tempCurrentWord.length; j++) {
-					if (word[i] === tempCurrentWord[j]) {
-						tempResult++
-						break;
-					}
-				}
-			}
-			if (tempResult === word.length && word !== tempCurrentWord) {
-				aiWords.push(w)
-			}
-		})
-		aiWords.map(x => {
-			elem.compWordsFinal.insertAdjacentHTML('afterbegin', `<p>${x} ${x.length}</p>`)
-		})
-		userWords.map(x => {
-			if (x.length < 4) {
-				elem.yourWordsFinal.insertAdjacentHTML('afterbegin', `<p>${x} <span class="red">${x.length}</span></span></p>`)
-			} else {
-				elem.yourWordsFinal.insertAdjacentHTML('afterbegin', `<p>${x} ${x.length}</p>`)
-			}
-		})
-		console.log(aiWords)
-		console.log(userWords)
+		let objWords = {
+			id: 0,
+			word: 'кит',
+			status: true
+		}
+
 	}
 
 	#render() {
@@ -100,6 +76,8 @@ class Typer {
 		this.mode = 1
 		this.#render()
 		this.#verificationWords()
+		elem.yourWordsFinal.innerHTML = ''
+		elem.compWordsFinal.innerHTML = ''
 	}
 
 	start() {
@@ -167,3 +145,44 @@ elem.quotesBtn.onclick = () => {
 window.onload = () => {
 	clock.app()
 }
+
+
+//
+
+/*
+elem.yourWordsFinal.innerHTML = ''
+		elem.compWordsFinal.innerHTML = ''
+		let userWords = elem.yourWords.value.trim().split(`\n`)
+		let aiWords = []
+		let tempCurrentWord = this.currentWord.split('').sort().join('')
+		this.vocabArr.forEach(w => {
+			let tempResult = 0;
+			let word = w.split('').sort().join('')
+			for (let i = 0; i < word.length; i++) {
+				for (let j = 0; j < tempCurrentWord.length; j++) {
+					if (word[i] === tempCurrentWord[j]) {
+						tempResult++
+						break;
+					}
+				}
+			}
+			if (tempResult === word.length && word !== tempCurrentWord) {
+				aiWords.push(w)
+			}
+		})
+
+		// render part
+		aiWords.map(x => {
+			elem.compWordsFinal.insertAdjacentHTML('afterbegin', `<p>${x} ${x.length}</p>`)
+		})
+		userWords.map(x => {
+			if (x.length < 4) {
+				elem.yourWordsFinal.insertAdjacentHTML('afterbegin', `<p>${x} <span class="red">${x.length}</span></span></p>`)
+			}
+			else {
+				elem.yourWordsFinal.insertAdjacentHTML('afterbegin', `<p>${x} ${x.length}</p>`)
+			}
+		})
+		console.log(aiWords)
+		console.log(userWords)
+		 */

@@ -1,0 +1,38 @@
+1. Finish everything in level01.txt, level02.txt, level03.txt, level04.txt
+   (there are "DO WHILE" missions somewhere too)
+
+2. DOM manipulation. Continue with DOM01.html.
+   a) In HTML create orange div. In JS add some text to it.
+
+   b) In HTML create blue paragraph with the text: 
+      "My favourite food is ". In JS add to the text "pizza".
+
+3. Questionnaire. Use questionnaire.html and questions.js
+   that you created in the class.
+
+   a) Add at least 1 question more to the question array
+
+   b) Before the loop add variable "score".
+      For each right answer add 1 point, for each wrong answer
+      subtract 2 points. After the loop show the final score
+
+   c) Before the loop ask the player what's their name.
+      Use it when talking to them.
+
+   d) Each time after the player answers a question ask:
+      "Do you want to stop the game? Y/y/N/n",
+      and, if yes, "break" (don't forget to show the final score)
+
+   e) Each time before asking the question, show the question 
+      text and ask "Do you want to skip the question? Y/y/N/n", 
+      and if "yes", use "continue" and show the next question.
+      This way it happens that you show each question twice:
+      first time to ask if the player wants to skip it and
+      the second - to ask it really.
+
+   f) When showing a question, show it with it's number
+
+
+
+
+

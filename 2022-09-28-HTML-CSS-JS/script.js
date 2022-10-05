@@ -1,21 +1,9 @@
-let a = 25
-let b = 5 * 5
+const button = document.querySelector('.button')
 
+let index = 0;
 
-if (a === b) {
-	console.log('a is equal to b')
-}
-if (a == b) {
-	console.log('a is equal to b')
-}
-
-b = 5 * 6
-
-if (a !== b) {
-	console.log('a is not equal to b')
-}
-if (a != b) {
-	console.log('a is not equal to b')
-}
-
-
+button.addEventListener('click', (e) => {
+	e.preventDefault()
+	index++
+	button.textContent = `${index}`
+})

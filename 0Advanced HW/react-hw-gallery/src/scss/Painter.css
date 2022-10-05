@@ -1,0 +1,22 @@
+.painter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.painter h1 {
+  margin: 15px 0 0 27px;
+  font-weight: 400;
+}
+.painter p {
+  width: 92%;
+  margin-left: 70px;
+}
+.painter__masterpieces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=Painter.css.map */

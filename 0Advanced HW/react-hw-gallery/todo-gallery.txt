@@ -1,0 +1,334 @@
+REACT COMPONENTS
+***************************
+Component is a modular part of your app.
+There are 2 types of React components: class and functional.
+We're going to use mostly the functional components as
+they are more modern and intuitive.
+
+Functional component is comprised of variables, functions and "return" part.
+
+"return" - this is the part that is being rendered by React on the screen.
+So anything that we would like to see on the screen, we're going to put 
+in the "return" part.
+
+1. Create "gallery" React App by one of the options, for example
+
+    > npx create-react-app gallery
+        (run create-react-app module once directly from the Internet)
+
+    > cd gallery
+
+    > npm start
+
+2. When react app is just created delete/remove everything 
+   except of the basics. You may remove App.css too. as index.css is enough
+   for this small app.
+
+3. React uses the language that is the combination of HTML and JS,
+   it is called "JSX". 
+
+   Rename App.jsx to App.jsx
+
+   Check it out. App is an example of the functional React component.
+   For now you see there only the "return" part.
+                                
+4. Create dir src/components and inside 3 files:
+   src/components/Gallery.jsx
+   src/components/Header.jsx
+   src/components/Masterpiece.jsx
+
+   Pay attention that these will be the names of 
+   your app components, so they should be named 
+   by UpperCamelCase - starting from upper case letter
+
+5. Header.jsx
+
+   Use snippet "rfc" (or "rfce") and the functional
+   component Header will be created. 
+
+   Remove the line of React import, as it is already imported.
+
+   Now make your component like this:
+
+   export default function Header() {
+        return (
+            <header>
+                <h1>Dutch Painters Gallery</h1>
+            </header>
+        )
+    }
+
+6. App.jsx
+
+    To add a component to the app we should import it first.
+    After that we can use it, and it looks like it is a new HTML tag.
+    Sometimes we use it like here - one tag, and sometimes - two tags,
+    opening and closing.
+
+import Header from './components/Header';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
+}
+
+export default App;
+
+  Ensure that you see the header.
+
+7. index.css
+
+Leave there the original "body" selector with it's properties
+and put there too:
+
+* {
+  margin: 0;
+}
+
+header {
+  margin: 10px;
+}
+
+#gallery {
+  display: flex;
+}
+
+.masterpiece {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #444;
+  box-shadow: 0 2px 2px #ccc;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.masterpiece>img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.masterpiece>h1 {
+  text-shadow: 1px 1px #5ff;
+  color: #333;
+}
+
+.masterpiece>h2 {
+  color: #444;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+8. Put the img dir with the masterpiece images into "public" directory.
+
+When at the hosting, React will bring images from the outer
+origins or likewise from the public directory - as they should 
+not be secured and hidden.
+
+9. Gallery.jsx
+
+Use snippet "rfc" to create the component,
+and put in it the array with the masterpieces.
+
+The component should look now like this: 
+
+
+export default function Gallery() {
+
+    const paintings = [
+        {
+          name: "Jacob’s dream",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Jacob_s_dream_1605.jpg",
+          desc: "The dream about the divine ladder and the angels",
+          date: "circa 1605"
+        },
+        {
+          name: "Poultry Merchant",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Poultry_Merchant_1620_1643.jpeg",
+          date: "between 1620 and 1643"
+        },
+        {
+          name: "Still-Life of Kitchen Utensils",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Still-Life_of_Kitchen_Utensils_1610_1643.jpg",
+          date: "between 1610 and 1643"
+        },
+        {
+          name: "Kitchen Still-Life",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Kitchen_Still-Life_1608_1610.jpg",
+          date: "between 1608 and 1610"
+        }
+      ];
+
+  return (
+    <div id='gallery'>
+
+    </div>
+  )
+}
+
+10. App.jsx.
+
+    Import "Gallery" and include it after the Header:
+
+    import Header from './components/Header';
+import Gallery from './components/Gallery';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Gallery />
+    </div>
+  );
+}
+
+export default App;
+
+We still cannot see nothing new on the page.
+
+11. Masterpiece.jsx
+
+Use "rfc", remove "React" import, put the next into the file:
+
+const Masterpiece = () => {
+    return (
+        <div className='masterpiece'>
+            <h1 className='painting-name'>Masterpiece name</h1>
+            <h2 className='painter-name'>Painter name, painting date</h2>
+        </div>
+    );
+}
+
+export default Masterpiece;
+
+12. Gallery.jsx
+
+Now import Masterpiece component here,
+and create it 4 times.
+
+Ensure that you see the gallery now in the page.
+
+import Masterpiece from './Masterpiece';
+
+export default function Gallery() {
+
+    const paintings = [
+        {
+          name: "Jacob’s dream",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Jacob_s_dream_1605.jpg",
+          desc: "The dream about the divine ladder and the angels",
+          date: "circa 1605"
+        },
+        {
+          name: "Poultry Merchant",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Poultry_Merchant_1620_1643.jpeg",
+          date: "between 1620 and 1643"
+        },
+        {
+          name: "Still-Life of Kitchen Utensils",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Still-Life_of_Kitchen_Utensils_1610_1643.jpg",
+          date: "between 1610 and 1643"
+        },
+        {
+          name: "Kitchen Still-Life",
+          painter: "Cornelis Jacobsz Delff",
+          src: "/img/Cornelis_Jacobsz_Delff/Kitchen_Still-Life_1608_1610.jpg",
+          date: "between 1608 and 1610"
+        }
+      ];
+
+  return (
+    <div id='gallery'>
+        <Masterpiece />
+        <Masterpiece />
+        <Masterpiece />
+        <Masterpiece />
+    </div>
+  )
+}
+
+13. 
+********************* PROPS ************************************************
+The functional components are created by functions,
+these functions get parameters - in React programming we call them "props"
+as they are "properties" of the parameter object.
+
+For example Masterpiece component should get the props of the
+painting name, painter name, etc. 
+
+Props is an object. So, we get to single parameter
+as to a property of this object.
+Masterpice.jsx:
+
+const Masterpiece = (props) => {
+    return (
+        <div className='masterpiece'>
+            <h1 className='painting-name'>{props.painting}</h1>
+            <h2 className='painter-name'>{props.painter}, {props.date}</h2>
+        </div>
+    );
+}
+
+export default Masterpiece;
+
+Pay attention that in JSX language the part of JS inside HTML is
+written inside the curly brackets {}
+
+14. Now the component "Masterpiece" gets the "props", 
+but we should pass them to it from "Gallery" component:
+
+Gallery.jsx:
+
+  return (
+    <div id='gallery'>
+        <Masterpiece painting={paintings[0].name} painter={paintings[0].painter} date={paintings[0].date} />
+        <Masterpiece painting={paintings[1].name} painter={paintings[1].painter} date={paintings[1].date} />
+        <Masterpiece painting={paintings[2].name} painter={paintings[2].painter} date={paintings[2].date} />
+        <Masterpiece painting={paintings[3].name} painter={paintings[3].painter} date={paintings[3].date} />
+    </div>
+  )
+
+  You see here prop name as an attribute and it gets a value in the curly brackets - JS.
+  Check that you see the names and the dates in the page.
+
+  15. Now let's add prop named "src" and create <img> with it 
+      at "Masterpiece" component. Don't forget "alt" attribute there.
+
+
+        Gallery.jsx:
+
+        return (
+            <div id='gallery'>
+                <Masterpiece painting={paintings[0].name} painter={paintings[0].painter} date={paintings[0].date} src={paintings[0].src} />
+                <Masterpiece painting={paintings[1].name} painter={paintings[1].painter} date={paintings[1].date} src={paintings[1].src} />
+                <Masterpiece painting={paintings[2].name} painter={paintings[2].painter} date={paintings[2].date} src={paintings[2].src} />
+                <Masterpiece painting={paintings[3].name} painter={paintings[3].painter} date={paintings[3].date} src={paintings[3].src} />
+            </div>
+        )
+
+        Masterpiece.jsx:
+
+        const Masterpiece = (props) => {
+            return (
+                <div className='masterpiece'>
+                    <h1 className='painting-name'>{props.painting}</h1>
+                    <h2 className='painter-name'>{props.painter}, {props.date}</h2>
+
+                    <img src={props.src} alt="" />
+                </div>
+            );
+        }
+
+        export default Masterpiece;
+
+16. It is not the end of the tutorial. To Be Continued ...

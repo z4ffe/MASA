@@ -1,0 +1,5 @@
+   Canvas project. Or use it as just an exercise.
+   Use Breakout-game-step-by-step.txt to learn about 2D canvas 
+   and prepare 1-level game.
+   Make from it your own project by adding levels, 
+   colors and rules 

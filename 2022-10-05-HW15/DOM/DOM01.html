@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .green {
+            background-color: green;
+            color: yellow;
+            width: 400px;
+            min-height: 200px;
+        }.orange {
+            background-color: orange;
+            color: black;
+            width: 400px;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- DOM - Document Object Model -->
+    <div class="orange"></div>
+    <div class="green"></div>
+    <p class="para"></p>
+    <script>
+        const divGreen = document.querySelector('.green');
+        const divOrange = document.querySelector('.orange');
+        const para = document.querySelector('.para');
+
+        divGreen.innerText = "שלום עולם"
+        divOrange.textContent = 'Some text'
+        para.style.setProperty('color', 'blue')
+        para.textContent = 'BLUE PARAGRAPH'
+
+    </script>
+</body>
+</html>

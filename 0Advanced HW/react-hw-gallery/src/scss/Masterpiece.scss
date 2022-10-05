@@ -1,0 +1,46 @@
+@import "variables";
+
+.masterpiece-wrapper {
+  display: flex;
+  margin: 20px auto 0;
+  background-color: transparent;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
+  border-radius: 2px;
+
+  .masterpiece {
+    display: flex;
+    flex-direction: column;
+    min-width: 315px;
+    min-height: 270px;
+
+    h1 {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      border-bottom: 1px solid $bordergray;
+      font-weight: 500;
+    }
+
+    p {
+      display: block;
+      margin: 1px auto 1px;
+      text-align: center;
+      border-bottom: 1px solid $bordergray;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      max-width:300px;
+      max-height:300px;
+      width: auto;
+      height: auto;
+      margin: 5px auto 5px;
+      border: 2px solid #50502c;
+      border-radius: 2px;
+    }
+  }
+}

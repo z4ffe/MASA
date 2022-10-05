@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="image/png" sizes="16x16" rel="icon" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <title id="title">Hello!</title>
+</head>
+<body>
+<h1 id="main-title"></h1>
+<div class="wrapper">
+    <h2 class="question" id="question"></h2>
+    <div class="answers-wrapper">
+        <form id="form">
+        </form>
+        <div class="control">
+            <button id="check-btn">Ответить</button>
+            <button id="skip-btn">Пропустить</button>
+            <button id="restart-btn">Начать заново</button>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <div class="modal-wrapper">
+        <label>
+            <input id="modal-name" type="text" placeholder="Введите ваше имя: ">
+            <button id="modal-btn">Ok!</button>
+        </label>
+    </div>
+</div>
+<script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

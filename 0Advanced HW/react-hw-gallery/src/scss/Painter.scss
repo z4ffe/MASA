@@ -1,0 +1,25 @@
+@import "variables";
+
+.painter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  h1 {
+    margin: 15px 0 0 27px;
+    font-weight: 400;
+  }
+
+  p {
+    width: 92%;
+    margin-left: 70px;
+  }
+
+  &__masterpieces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+  }
+}
