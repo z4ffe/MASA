@@ -1,14 +1,17 @@
-import React, {Component} from 'react';
 import '../scss/Header.css'
 
-class Header extends Component {
-	render() {
-		return (
-			<div className="header">
-				<h1>Dutch Painters Gallery</h1>
-			</div>
-		);
-	}
+export const Header = (props) => {
+	return (
+		<div className="header">
+			<h1>{props.title}</h1>
+		</div>
+	)
+};
+
+
+
+Header.defaultProps = {
+	title: 'Dutch Painters Gallery'
 }
 
 export default Header;

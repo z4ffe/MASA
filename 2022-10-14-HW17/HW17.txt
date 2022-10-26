@@ -1,0 +1,69 @@
+1. Till 18.10.2022 finish the first steps of the PORTFOLIO mission:
+   according to the file portfolio.txt
+
+2. The First Project. First version till 18.10.2022,
+   and we'll discuss it then - to explain how we can shorten the loop.
+   Is it a PRIME number?
+   Put it into mango/your-name/prime-num dir.
+
+   The user should enter a number into an input field.
+   By clicking the button the user should get the answer,
+   if the number is prime or not.
+
+   Prime numbers are the numbers that are dividable by 
+   one and by themselves only, like 17, 29.
+   2 - is the smallest prime number.
+   Not 0 and not 1 are not considered prime numbers.
+   Negative and not integer numbers are not valid input.
+
+   Check if the input number is valid and is not 1 or 0,
+   and after that use loop to check if the number 
+   is dividable by some number except of 1 and itself.
+
+   Try to make the loop as short as possible.
+
+   Put the project into the dir digi/your-name/prime-number
+
+   Good luck!
+
+3. Training for loops and arrays - level05.txt
+
+4. Training for ternary operator inside ternary operator
+   and DOM manipulations - level06.txt
+
+5. Two-number calculator - continued from HW09. 
+*** NEW-NEW-NEW ***: No listeners - "onclick" attribute.
+Change the old Two-Number Calculator that is located 
+in mango/your-name/two-num-calc directory.
+
+No prompt(), no SWITCH.
+
+   <!-- Step 1: - 2 input fields with the labels
+                  - buttons "+", "-", "*", "/", "*", "%", "^"
+                  - output div or paragraph -->
+   <!-- Step 2: in JS create 3 global variables -
+                  - for 2 inputs
+                  - and for output -->
+   <!-- Step 3: write function getInput() that gets
+                  the values from input and puts them 
+                  into the global variables -->
+   <!-- Step 4: write function setOutput(txt) that
+                  gets text as parameter and sets it as 
+                  the innerText of the output div or paragraph -->
+   <!-- Step 5: go over the functions add(), subtract(), multiply(), divide(), 
+                divideIntegers(), power() and add run inside of each
+                at the beginning - getInput(),
+                at the end - setOutput(outputText)
+
+
+    
+
+        and add them to the button "onclick" attribute,
+        Example: 
+           <button onClick="add();">+</button>
+           <button onClick="subtract();">-</button>
+
+  The examples are at two-num-calc-example01.png and
+  two-num-calc-example02.png.
+
+

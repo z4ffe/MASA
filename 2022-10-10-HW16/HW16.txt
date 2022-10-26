@@ -1,0 +1,141 @@
+1. Till 18.10.2022 finish the first steps of the PORTFOLIO mission:
+   according to the file portfolio.txt
+
+2. Continue questionnaire.js 
+
+   CHALLENGE 
+      In each place where the player should give any answer,
+      run "while" loop until it will be a valid answer.
+
+      For example, 
+          -if asked "Yes" or "No", should continue until
+           the player answers "Yes" or "No" 
+          - if asked the questionnaire question, should continue 
+            until the player answers "a", "b" or "c"
+
+3. str='One, day, I, am, going, to, make, onions, cry'
+   Remove the commas - use split() and join()
+
+4. Split and find sum of all digits. Write a function,
+   which gets a number, converts it to a string, splits 
+   into digits and returns their sum.
+
+5. Return BOOLEAN (without IF ELSE)
+
+   Create canVote() funtion such that it returns true when 
+   the user can vote and false otherwise. 
+  
+   The age for voting is at least 18 (18 is included).
+ 
+   Create new array goVote.
+   Go over the given array of the ages and for each age add
+   to the array goVote true or false.
+
+   const ages = [18, 18, 21, 30, 119, 66, 0.5, 12, 19, 45, 78, 4.5]
+   The output should be:
+
+   console.log(goVote);
+   // true, true, true, true, true, true, false, false, true, true, true, false
+
+6. DOM manipulation. Use DOM02.html 
+
+   a) Add somewhere in the beginning of the script after 
+   the variable declarations the next commands:
+
+        rectangle.style.width = "200px";
+        rectangle.style.height = "140px";
+
+   We need this to assign the initial values to the width and length.
+
+   Now create a function makeLarger() that takes rectangle's width and
+   rectangle's length and multiplies them by 1.1.
+
+   Create Event Listener on 'click' on the button 'Make Larger'
+   and give it this function.
+
+   b) Each time when changing the size, write the width and height
+   of the triangle inside it - instead of the previous text.
+
+   c) Make one of the buttons to change it's border when clicking 
+   on the second button.
+
+7. includes(), join(), split(). 
+   a) Is the test too easy?
+      The teacher of a class would like to check whether the test was too easy.
+      The teacher has a simple check for that: If at least one of the students 
+      got 20 (over 20) on that test, then the test is deemed too easy.
+      Complete the function isTestTooEasy such that it returns true 
+      when it's too easy and false otherwise.
+
+      For example:
+      console.log(isTestTooEasy([10, 15, 13, 19])) // should return false
+      console.log(isTestTooEasy([7, 13, 20, 15])) // should return true
+
+   b) Create function convertToString such that it returns a string 
+      from the grades array it receives.
+      Look at the sample usage to see the expected format 
+      of the string.
+
+      // Sample usage:
+      console.log(convertToString([10, 15, 13, 19])) // "10 & 15 & 13 & 19"
+      console.log(convertToString([7, 13, 20, 15])) // "7 & 13 & 20 & 15"
+
+   c) const arOfAr = [[1,0,2,0,4],[3,3,3],[4,7],[9,9,0,1],[8,5]]
+
+      Go over the array of arrays arOfAr, perform join
+      on each array member, convert it into a number
+      and put into new numArray.
+
+      The result should be:
+
+      console.log(numArray);
+
+      // [10204,333,47,9901,85]
+
+8. Input and listeners.
+
+   a) Multiplication table. Use input field 
+      of type "number". You app gets 
+      an integer in range from 2 to 9 
+      (including) and shows multiplication 
+      table for this number. 
+      The example for 7 is 
+      at mult_table_example.PNG.
+
+   b) Harry Potter. Input: how many times 
+      Harry Potter (or computer :) 
+      should write "I will tell no lies". 
+      Output this number of sentences - 
+      write one in lowercase, one in uppercase, 
+      one in lowercase, one in uppercase, etc. 
+
+      Could you make only each third (or fifth) 
+      sentence be written in uppercase?
+
+9. Flag. User should enter the right password,
+   for example the string "Password123!".
+
+   Write a loop that asks the user for the password.
+   If the password is OK, exit the loop.
+   If the password is wrong, ask the user if they want to
+   choose a new password. If yes, exit the loop,
+   if no, continue asking for a password.
+
+   After the loop check if the loop has ended because 
+   of that the user used the right password (than
+   say "You're connected") or because thay decided to choose a new
+   password (than say: "choose a new password").
+
+
+
+
+
+
+
+
+
+
+
+
+
+

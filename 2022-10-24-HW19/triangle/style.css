@@ -1,0 +1,13 @@
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.reverse2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bigger {
+    font-size: 45px;
+}

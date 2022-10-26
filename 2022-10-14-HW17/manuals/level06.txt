@@ -1,0 +1,59 @@
+Level 6.1 Ternary operator inside ternary operator. 
+Complication of Level 5.9.
+
+Write function checkGreat() that gets firstName.
+If the name starts with 'M' or 'G' - say 'Great!'
+If the name starts with 'T' or 'R' - say 'Totally Great!'
+If not, say with which letter it starts.
+
+checkGreat('Tal'); // 'Totally Great!'
+checkGreat('Neomi'); // 'N'
+checkGreat('Miri'); // 'Great!'
+checkGreat('Gila'); // 'Great!'
+checkGreat('Roni'); // 'Totally Great!'
+
+Level 6.2 Ternary operator inside ternary operator.
+Complication of Level 5.10.
+Declare variable "color" at the beginning of the program.
+Write function colorDecision() that gets a letter.
+Check if the letter equal 'b', return 'blue', 
+if the letter equals "g", return "green",
+otherwise return 'red'.
+Use the function to assign color to the variable.
+color = colorDecision('b') // "color" equals "blue"
+color = colorDecision('d') // "color" equals "red"
+color = colorDecision('g') // "color" equals "green"
+
+Level 6.3 
+ Создайте поле input и div.
+    Когда в input меняется число, в div 
+    должна появляться сумма чисел от 1 до этого числа.
+
+    Решите задачу один раз через событие 'change',
+    а второй раз через событие 'input'. Use 
+
+Level 6.4 Создайте поле input и div.
+    Когда в input меняется число, в div должно появляться 
+    произведение чисел от 1 до этого числа.
+
+    Если произведение отрицательное, div должен окраситься розовым, 
+    если неотрицательное,
+    то зеленым.
+
+    Решите задачу один раз через событие 'change',
+    а второй раз через событие 'input'
+
+Level 6.5. Создайте 2 поля input и div.
+    Когда в первом input меняется число, в div должен появляться список чисел от 1 до этого числа
+    через пробел.
+
+    Если число из первого input больше, чем число из второго, div должен окраситься 
+    сиреневым, если не больше, то желтым.
+
+    Решите задачу один раз через событие 'change',а второй раз через событие 'input'.
+
+Level 6.6. То же, что и 6.5, но список чисел должен идти через запятую
+
+
+
+

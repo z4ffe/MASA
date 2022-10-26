@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Binary Guessing</title>
+</head>
+<body>
+<div class="wrapper">
+    <span class=reload>&#x21bb;</span>
+    <h1>Binary Guessing</h1>
+    <label for="mode" class="mode">MODE ❯
+        <select name="mode" id="mode">
+            <option value="1">Machine think about number</option>
+            <option value="2">User think about number</option>
+        </select>
+    </label>
+    <div class="mode-one">
+        <label for="mode-one-min">
+            <input type="number" id="mode-one-min" placeholder="Enter min number: ">
+        </label>
+        <label for="mode-one-max">
+            <input type="number" id="mode-one-max" placeholder="Enter max number: ">
+        </label>
+        <label for="mode-one-answer">
+            <input type="number" id="mode-one-answer" placeholder="Enter your number: ">
+        </label>
+        <div class="buttons">
+            <button id="mode-one-btn">CHECK</button>
+            <button class="hidden" id="lower">LOWER</button>
+            <button class="hidden" id="higher">HIGHER</button>
+        </div>
+        <p>&#10095_ <span class="ai-answer"></span></p>
+    </div>
+</div>
+<script src="./script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    align-self: center;
+    width: 200px;
+    height: 50px;
+    border: 0;
+}
+
+.flex {
+    width: 20%;
+    /*flex-wrap: wrap;
+    flex-direction: row-reverse;*/
+    flex-flow: wrap row-reverse;
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 0 10px;
+    justify-content: space-around;
+}
+
+.flex-container {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.purpleBtn {
+    background: purple;
+    color: white;
+}
+
+.greyBtn {
+    background: grey;
+    color: yellow;
+}
+
+.orangeBtn {
+    background: orange;
+    color: navy;
+}
+
+.borderBtn {
+    border: 5px solid darkgreen;
+}
+
+.nightBtn {
+    background-color: black;
+    color: aliceblue;
+}

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.multi-table {
+  margin: 20px auto;
+  height: 200px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

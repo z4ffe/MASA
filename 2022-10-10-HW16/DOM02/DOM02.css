@@ -1,0 +1,34 @@
+body {
+    font-size: 1.5rem;
+}
+
+.purple {
+    background-color: purple;
+    color: lawngreen;
+    width: 200px;
+    height: 140px;
+    margin: 2rem;
+    overflow-wrap: break-word;
+}
+
+.yellow {
+    background-color: yellow;
+    color: navy;
+}
+
+.black {
+    background-color: black;
+    color: whitesmoke;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+button:hover {
+    opacity: 0.5;
+}

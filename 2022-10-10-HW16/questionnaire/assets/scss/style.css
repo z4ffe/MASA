@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  color: #cecece;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #4b4453, #645e6c, #7e7985, #9a95a0, #b6b2bb);
+}
+
+h1 {
+  margin: 200px auto 50px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #b4b4b4;
+  width: 600px;
+}
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.wrapper .answers-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .answers-wrapper #form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-height: 120px;
+  font-weight: 300;
+}
+.wrapper .answers-wrapper #form .form__element {
+  font-size: 20px;
+}
+.wrapper .answers-wrapper #form .form__element label {
+  margin-left: 5px;
+  width: 100%;
+}
+.wrapper .answers-wrapper .control {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.wrapper .answers-wrapper .control button {
+  border: 2px solid #ababab;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-image: linear-gradient(to right top, #4b4453, #645e6c, #7e7985, #9a95a0, #b6b2bb);
+}
+
+#restart-btn {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(159, 159, 159, 0.9);
+}
+.modal .modal-wrapper {
+  width: 400px;
+  height: 250px;
+  background-color: rgba(75, 68, 83, 0.8);
+  border: 1px solid whitesmoke;
+  border-radius: 2px;
+}
+.modal .modal-wrapper label {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.modal .modal-wrapper label input {
+  margin: 0 auto;
+  color: black;
+  width: 200px;
+  height: 30px;
+  padding-left: 5px;
+}
+.modal .modal-wrapper label button {
+  margin: 0 auto;
+  border: 2px solid #ababab;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-image: linear-gradient(to right top, #4b4453, #645e6c, #7e7985, #9a95a0, #b6b2bb);
+}
+
+/*# sourceMappingURL=style.css.map */
